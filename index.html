@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GEO</title>
+</head>
+
+<body>
+    <h2>Cuadrado</h2>
+
+    <div>
+        <form action="myCuadrado">
+            <p>Ingresa la longitud de los lados del cuadrado: </p>
+            <label for="input1">
+                   <input type="number" id="input1">
+                   <button type="button" class="area-btn" onclick="getArea()">Area</button>
+                   <button type="button" class="perimetro-btn" onclick="getPerimetro()">Perimetro</button>
+               </label>
+        </form id="form">
+        <div class="respuestas">
+            <p>Perimetro:
+                <p class="pResult">
+                    0 cm
+                </p>
+            </p>
+            <p>
+                Area:
+                <p class="aResult">
+                    0 cm²
+                </p>
+            </p>
+        </div>
+        <button type="button" onclick="getDelete()" class="delete-btn">Delete</button>
+    </div>
+
+    <!--
+        Calcular altura de triangulo
+    -->
+
+    <section>
+        <div>
+            <form action="aturaTriangulo">
+                <p>Ingresa la longitud de los lados y base del triangulo isoceles: </p>
+                <label for="inputA">
+                       <input type="number" id="inputA" placeholder="lados iguales">
+                       <input type="number" id="inputB" placeholder="base">
+                       <button type="button" class="altura-btn" onclick="getAltura()">Calcular altura</button>
+                   </label>
+            </form id="form">
+            <div class="respuesta">
+                <p>La altura es:
+                    <p class="alturaResult">
+                        0 cm
+                    </p>
+                </p>
+            </div>
+            <button type="button" onclick="getDelete()" class="delete-btn">Delete</button>
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
